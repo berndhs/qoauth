@@ -9,7 +9,7 @@ QT += network
 QT -= gui
 CONFIG += \
     crypto \
-    create_prl
+    create_prl 
 
 !macx: CONFIG += static_and_shared
 

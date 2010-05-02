@@ -1,10 +1,6 @@
 TEMPLATE = subdirs
 
-SUBDIRS += src tests
+SUBDIRS += src 
 
-CONFIG += ordered
+CONFIG += debug_and_release
 
-check.target = check
-check.commands = ( cd tests/ut_interface && ./ut_interface ) && ( cd tests/ft_interface && ./ft_interface )
-check.depends = sub-tests
-QMAKE_EXTRA_TARGETS += check
